@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Faça seu cadastro</h1>
+        <form class="box-form">
+            <div class="box-form--label-input">
+                <label for='input-name' class="box-form--label">Nome completo</label>
+                <input type="text" placeholder="Digite seu nome completo" class="box-form--input input" id="input-name">
+            </div>
+            <div class="box-form--date-country">
+                <div class="box-form--label-input box-form--date">
+                    <label for="input-birth-date" class="box-form--label">Data de Nascimento</label>
+                    <input type="date" class="box-form--input input" id="input-birth-date">
+                </div>
+                <div class="box-form--label-input box-form--country">
+                    <label class="box-form--label">País</label>
+                    <select class="box-form--input input">
+                        <option>Selecionar</option>
+                        <option>Brasil</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Uruguai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-form--label-input box-form--gender">
+                <label class="box-form--label">Gênero</label>
+                <div class="box-input-gender">
+                    <div>
+                        <input type="radio" name="gender" class="input-gender" id="input-gender-f">
+                        <label for='input-gender-f' class="gender">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" class="input-gender" id="input-gender-m">
+                        <label for='input-gender-m' class="gender">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" class="input-gender" id="input-gender-n" checked>
+                        <label for='input-gender-n' class="gender">Não declarar</label>
+                    </div>
+                </div>
+            </div>
+            <div class="box-form--label-input">
+                <label for='input-email' class="box-form--label">E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" class="box-form--input input" id="input-email">
+            </div>
+            <div class="box-form--label-input">
+                <label for="input-password" class="box-form--label">Senha</label>
+                <input type="password" placeholder="Crie uma senha" class="box-form--input input" id="input-password">
+            </div>
+            <div class="box-form--label-input">
+                <label for="input-confirm-password" class="box-form--label">Confirme sua Senha</label>
+                <input type="password" placeholder="Confirmar senha" class="box-form--input input" id="input-confirm-password">
+            </div>
+            <div class="box-terms-of-use">
+                <input type="checkbox" class="checkbox-terms-of-use" id="input-terms-login">
+                <label for="input-terms-login" class="text-terms-login">Aceito os <a href="#" class="link-terms-login">termos e condições</a> e concordo com as <a href="#" class="link-terms-login">políticas de
+                        privacidade</a> do Hall To Code.</label>
+            </div>
+            <span class="warnning">* Preencha as partes em branco, por favor.</span>
+            <button class="button-form">Cadastrar</button>
+        </form>
+        <span class="text-terms-login">Já tem uma conta no Hall To Code? <a href="login.html" class="link-terms-login">Entre agora</a></span>
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
